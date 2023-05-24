@@ -56,9 +56,20 @@ PIs: Dr. <a href="https://www.bio.tamu.edu/faculty-page-heath-blackmon/">Heath B
 <div>
 Fusions between chromosomes are a key mechanism by which genome structure evolves. Fusions between autosomes and sex chromosomes are especially interesting due to the potential they have to form new associations between sex and loci which were historically autosomal. There are certain conditions under which the formation of such new associations may have beneficial effects on fitness. One of these conditions is the presence of intra-locus sexual antagonism at an autosomal locus. Intra-locus sexual antagonism describes a situation where an allele at an autosomal locus confers differential fitness effects which are dependent on sex. Because the polarity of fitness effects associated with loci experiencing sexual antagonism is dependent on sex, a possible mechanism towards the resolution of intra-locus sexual antagonism lies in the formation of non-random associations between sex and inheritance of the allele in question. Fusions between sex chromosomes and autosomes have the potential to form these non-random associations, and as such, resolution of intra-locus sexual antagonism has long been hypothesized as a potential selective pressure driving sex chromosome-autosome fusion (SAF) events. However, attempts to find empirical evidence for positive selection on SAF events have been mostly restricted to smaller taxonomic clades, and often return mixed results. The best support for broad selection for SAF events would be an excess of such fusion types on large taxonomic scales. Diverse in karyotype and heterogenous in rates of karyotypic evolution, mammals represent an interesting taxonomic class upon which to evaluate this hypothesis and utilize methods which have previously only been applied to smaller taxonomic clades on a limited scale
 </div>
-
-
-
-
-
-
+<br>
+<figure style="float:left;margin-right:20px;margin-bottom:80px;height:200px;width:169px;text-align:center">
+        <img src="../images/mk model.jpg" alt="SAF markov model">
+        <figcaption><i>A biologically realistic markov model describing karyotypic evolution</i>
+	</figcaption>
+</figure>
+<div>
+This project incorporates an extensive database of mammalian karyotypes that has been maintined by the Blackmon Lab, a modern timetree of mammalian taxa which incorporates genomic data, and a biologically realistic markov model describing the evolution of karyotype, expanding on phylogenetic comparative methods used in the study of discrete character evolution to explore the evolution of karyotype across time in 950 mammal species. We estimate rates associated with our model of character evolution using Bayesian MCMC methods, and use stochastic mapping techniques to produce maps of ancestral karyotypes and fusion events. We develop new methods to "fill the gaps" associated with stochastic maps when rate heterogenity throughout the phylogeny being mapped is prominent, expanding the applicapbility of this commonly used phylogenetic comparative method.  Observed SAF events as a proportion of total fusion events are extracted and compared against proportions expected given a null hypothesis of no selection on fusions of any kind. 
+</div>
+<br>
+<figure style="float:right;margin-left:20px;margin-bottom:80px;height:300px;width:300px;text-align:center">
+        <img src="../images/mammal smap.jpg" alt="Mammals stochastic map">
+        <figcaption><i>Stochastic map depicting evolution in karyotype (autosome number and sex chromosome fusion state) across a mammalian phylogeny</i>
+        </figcaption>
+</figure>
+<div>
+Our preliminary results suggest that observed proportions of SAF events are significantly lower than proportions expected under a null model, with this being true of both mammals as a whole and several mammal subclades. We hypothesize that this is driven by high rates estimated for autosome – autosome fusions and fissions in our model. Various factors such as extreme rate heterogeneity and the inability of our current model to account for multiple SAF events may contribute to this overestimation. Our next steps are to develop a new model which allow for such multiple fusions and rerun the analyses under this new model. We predict that this should result in null and observed SAF proportions that are more aligned.
