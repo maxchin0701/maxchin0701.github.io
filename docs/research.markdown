@@ -47,7 +47,7 @@ One of the major findings from this project is that direct selection on traits w
 </div>
 
 <h3>Sex chromosome autosome fusions in mammals</h3>
-PIs: Dr. <a href="https://www.bio.tamu.edu/faculty-page-heath-blackmon/">Heath Blackmon</a>
+PI: Dr. <a href="https://www.bio.tamu.edu/faculty-page-heath-blackmon/">Heath Blackmon</a>
 
 <figure style="float:right;margin-left:20px;margin-bottom:80px;height:225px;width:300px;text-align:center">
         <img src="../images/Platy karyotype.png" alt="Platypus karyotype">
@@ -73,3 +73,36 @@ This project incorporates an extensive database of mammalian karyotypes that has
 </figure>
 <div>
 Our preliminary results suggest that observed proportions of SAF events are significantly lower than proportions expected under a null model, with this being true of both mammals as a whole and several mammal subclades. We hypothesize that this is driven by high rates estimated for autosome – autosome fusions and fissions in our model. Various factors such as extreme rate heterogeneity and the inability of our current model to account for multiple SAF events may contribute to this overestimation. Our next steps are to develop a new model which allow for such multiple fusions and rerun the analyses under this new model. We predict that this should result in null and observed SAF proportions that are more aligned.
+<br><br>
+Software for resolving failed edges on stochastic maps can be found <a href="https://maxchin0701.github.io/software/">here</a>.<br><br>
+</div>
+
+<h3>Developing methods to quantify and visualize heterogenity in discrete character evolution across phylogenies</h3>
+PI: Dr. <a href="https://www.bio.tamu.edu/faculty-page-heath-blackmon/">Heath Blackmon</a>
+
+<figure style="float:left;margin-right:20px;margin-bottom:95px;height:300px;width:184px;text-align:center">
+        <img src="../images/scalar plot.jpg" alt="Rate heterogenity toy example">
+        <figcaption><i>Tree with tip states plotted at tips (a) and output of function with scalars represented by colors (b)</i>
+        </figcaption>
+</figure>
+<div>
+When trying to estimate rates of discrete character evolution, most phylogenetic comparative methods attempt to find a single rate which can be applied to an entire tree. This resulting parameter represents a compromise between rates estimated for portions of the tree where the trait changes rapidly and portions of the tree where the trait remains stagnant. Understanding which portions of the tree push rates up and which portions of the tree push rates down can be insightful in understanding the factors which correlate with rapid rates of change in a trait.
+<br><br>
+We develop a method to allow for edge-by-edge analysis of rate heterogeneity which is built around assigning scalars associated with length extensions or reductions to each edge of a phylogeny. We begin by first taking a user supplied model, phylogeny, and tip states and estimating rates using existing maximum likelihood methods. We assume that the root of the tree has a scalar of one (no change in edge length). We then perform a preorder traversal of the tree and allow for each edge to have possible scalars of either the scalar associated with the parent edge, the scalar one bin above, or the scalar one bin below. At each edge, the lengths of previously traversed edges are multiplied by their assigned scalars, and the length of the current edge is independently multiplied by each of the possible scalars. The likelihood of observing the rates initially estimated given the modified edge lengths is calculated for each potential current scalar, and the potential scalar which maximizes likelihood is assigned to the current edge. This results in each edge of the phylogeny having an associated scalar describing whether the edge has more or less transitions than expected given the length of the edge and estimated rates. We also develop a function that allows for the coloring of edges based on associated scalars. Together, these functions allow for easy quantification and visualization of rate heterogenity in discrete character evolution.
+</div>
+<br>
+<figure style="float:right;margin-left:20px;margin-bottom:80px;height:300px;width:300px;text-align:center">
+        <img src="../images/scaled.carnivores.png" alt="Carnivores scaled phylogeny">
+        <figcaption><i>Phylogeny of carnivores colored by rate heterogenity in chromosomal fusions/fissions</i>
+        </figcaption>
+</figure>
+<div>
+We applied this software to explore variation in rates of karyotypic fusions and fissions in Carnivorans. Our analysis demonstrates that karyotypic evolution occurs rapidly in canids, with this being supported by both observed variation in extent canid karyotypes and historic literature. 
+<br><br>
+Software for the rate heterogeneity analytical methods described above can be found <a href="https://maxchin0701.github.io/software/">here</a>.<br><br>
+</div>
+
+
+
+
+
