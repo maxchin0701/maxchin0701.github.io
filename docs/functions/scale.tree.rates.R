@@ -511,7 +511,7 @@ plot.phyloscaled <- function (tree,palette="RdYlGn",edge.width=1,cex=1,
   fast <- sum(states > 1)
   
   #generate colors
-  if(palette=="RdYlGn"){
+  if(palette %in% rownames(brewer.pal.info)){
     if(1 %in% states){
       cols <- c(brewer.pal(n=2*slow + 1,name=palette)[1:slow],
                 brewer.pal(n=3,name=palette)[2],
