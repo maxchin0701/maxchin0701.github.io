@@ -25,6 +25,17 @@ Email: <a href="mailto: maxchin@tamu.edu">maxchin@tamu.edu</a>&emsp;&emsp;<a hre
 
 <h3>Education</h3>
 
-B.S in Biology from Texas A&M University
-
 Incoming Population Biology PhD student in the Laskowski Lab at UC Davis
+
+B.S in Biology from Texas A&M University (2019-2023)
+<ul>
+<li>Departmental Honors in Biology</li>
+<li>Undergraduate Research Scholars Thesis: Morphological trends in experimental and simulated populations of hybrid swordtails</li>
+</ul>
+
+<h3>Some of my other interests!</h3>
+<ul>
+<li>Travel! I am Malaysian by birth and was fortunate to grow up living in a variety of locations around the globe. Whether it's by foot, car, boat, or plane, I love to get out there and explore!</li>
+<li>I love to both listen and play music, and I have a particular affinity for anything related to punk and other alternative subcultures!</li> 
+<li>I am 100% an outdoors person, I especially love to hike and scuba dive!</li>
+</ul>

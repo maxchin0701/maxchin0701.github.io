@@ -4,7 +4,7 @@ title: Software
 permalink: /software/
 ---
 
-<a href="../functions/scale.tree.rates.R" download>scale.tree.rates.R</a>: This R script contains two functions that can be used to apply the rate heterogeneity quantification/visualization methods described at the bottom of the <a href="https://maxchin0701.github.i\o/research">Research</a> page. These functions are designed to be easily incorporated into existing analyses which incorporate phylogenetic comparative methods. At the top of the page are existing R packages which scale.tree.rates.R references and calls functions from.
+<a href="../functions/scale.tree.rates.R" download>scale.tree.rates.R</a>: This R script contains two functions that can be used to apply the rate heterogeneity quantification/visualization methods described at the bottom of the <a href="https://maxchin0701.github.io/research">Research</a> page. These functions are designed to be easily incorporated into existing analyses which incorporate phylogenetic comparative methods. At the top of the page are existing R packages which scale.tree.rates.R references and calls functions from.
 <br><br>
 The first function, scaleTreeRates, performs the rate heterogenity analysis and assigns scalars describing relative rates to each edge of a supplied phylogeny. This function takes three mandatory arguments and five optional arguments (defaults available) from users. These arguments are:
 <br>
