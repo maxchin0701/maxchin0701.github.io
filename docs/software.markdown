@@ -27,6 +27,6 @@ The second function, plot.phyloScaled, facilitates the visualization of a "phylo
 tree (mandatory): a phylogeny of class "phyloscaled" and "phylo" <br><br>
 palette: the palette to be used for coloring of phylogeny edges, set by default to "RdYlGn" from RColorBrewer. It is recommended that this is a diverging palette so that color gradient formed using scalars is visually informative and easy to interpret. This can either be a character string which is passed to RColorBrewer or "viridis" to specify usage of the standard viridis palette. Because RColorBrewer sets the maximum number of distinct colors for divergent palettes to be 11, any phylogeny which has greater than 11 unique scalar bins represented within it's edges must use a viridis palette. <br><br>
 edge.width, cex, show.tip.label: see plot.phylo
+</div>
 <br><br>
 Both of these functions can also be found in the R pacakge <a href="https://github.com/coleoguy/evobir">evobiR</a>.
-</div>
