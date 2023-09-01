@@ -74,7 +74,7 @@ This project incorporates an extensive database of mammalian karyotypes that has
 <div>
 Our preliminary results suggest that observed proportions of SAF events are significantly lower than proportions expected under a null model, with this being true of both mammals as a whole and several mammal subclades. We hypothesize that this is driven by high rates estimated for autosome – autosome fusions and fissions in our model. Various factors such as extreme rate heterogeneity and the inability of our current model to account for multiple SAF events may contribute to this overestimation. Our next steps are to develop a new model which allow for such multiple fusions and rerun the analyses under this new model. We predict that this should result in null and observed SAF proportions that are more aligned.
 <br><br>
-Software for resolving failed edges on stochastic maps can be found <a href="https://maxchin0701.github.io/software/">here</a>.<br><br>
+<br><br><br>
 </div>
 
 <h3>Developing methods to quantify and visualize heterogenity in discrete character evolution across phylogenies</h3>
@@ -99,7 +99,7 @@ We develop a method to allow for edge-by-edge analysis of rate heterogeneity, bu
 <div>
 We applied this software to explore variation in rates of karyotypic fusions and fissions in Carnivorans. Our analysis demonstrates that karyotypic evolution occurs rapidly in canids, with this being supported by both observed variation in extent canid karyotypes and historic literature. 
 <br><br>
-Software for the rate heterogeneity analytical methods described above can be found <a href="https://maxchin0701.github.io/software/">here</a>.<br><br>
+Functions for applyihg the rate heterogeneity analytical methods described above can be found <a href="https://maxchin0701.github.io/software/">here</a>, or in the R package <a href="https://github.com/coleoguy/evobir">evobiR</a>.<br><br>
 </div>
 
 
